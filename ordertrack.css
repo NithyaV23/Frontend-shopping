@@ -1,0 +1,124 @@
+:root{
+    --body:#8c9eff;
+    --const:#eceff1;
+    --line:#651fff;
+    --txt:#007bfd;
+    --light:#c5cae9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: 1.4;
+}
+.container{
+    width: 1100px;
+    max-width: 100%;
+    padding: 40px;
+    margin: 0 30px;
+    background-color: var(--const);
+    position: relative;
+}
+.details{
+    display: flex;
+    gap: 1em;
+     flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.Order h1{
+     text-transform: uppercase;
+
+}
+.Order span{
+    color: var(--txt);
+}
+.date p{
+    font-size: 1.1rem;
+
+}
+.track{
+   margin: 4em 0 8em;
+   margin-right: 5%;
+   
+}
+#programs{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+    text-align: center;
+}
+#programs li{
+    width: 20px;
+    position: relative;
+    margin: 10px; 
+    margin-left: 6px;
+
+}
+#programs li::before{
+    content: '\2713';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+    font-size: 2rem;
+    height: 50px;
+    background-color: var(--line);
+    color: #fff;
+    border-radius: 50%;
+    z-index: 11111;
+}
+#programs li:last-child::before{
+    content: '\2713';
+    font-weight: bold;
+    background: var(--light);
+
+}
+#programs::before{
+     content: ''; 
+    position: absolute;
+    top: 27px;
+    width: 64%;
+    margin-left: 35px;
+    height: 10px;
+    background: var(--line);
+    z-index: 111;
+} #programs::after{
+    content: '';
+    position: absolute;
+    top: 26px;
+    width: 100%;
+    height: 10px;
+    background-color: #c5cae9;
+} 
+ .lists{
+    display: flex; 
+    gap: 10em;
+    flex-wrap: wrap;
+     align-items: center; 
+
+} 
+.list p{
+    font-size: 1 1rem;
+}
+.list{
+display: flex;
+gap:1em;
+flex:1 1 60px;
+}
+.list img{
+    width: 60px;
+}
